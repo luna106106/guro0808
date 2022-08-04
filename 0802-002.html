@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <!-- -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <style>
+        p:before {
+            content: "";
+            display: block;
+            color: red;
+            width: 100px;
+            height: 5px;
+            background: red;
+        }
+
+        p:after {
+            content: "";
+            display: block;
+            color: red;
+            width: 150px;
+            height: 5px;
+            background: dodgerblue;
+        }
+        /* before after는 본래 콘텐츠 삽입을 위해 만들어졌는데... 내용을 비우고 오브젝트모양을 넣는 것으로 메뉴 바리에이션이 폭발해버림. */
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repudiandae et odio veniam quis iste facilis reiciendis, perferendis optio ex ipsum molestias dolorem blanditiis fugiat fuga nam! Provident, veritatis et.</p>
+    <script>
+
+    </script>
+</body>
+</html>
+
+<!-- 
+    
+-->
+<!-- 가상요소 -->
+
+<!-- 
+
+ -->

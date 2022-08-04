@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>가상요소메뉴</title>
+	<style>
+		body {
+			margin:  20px;
+			padding:  20px;
+			font-family:  Arial;
+			font-size:  16px;
+			background: #555;
+		}
+		.nav {
+			width: 700px;
+			position: relative; /*수평선을 긋기 위한 포지션*/
+			margin:  50px 0;
+			overflow: hidden;
+			text-align: center;
+			border: 1px solid black;
+		}
+		.nav a {
+			display:  block;
+			position: relative; /*작은원을 만들기 위한 포지션*/
+			float:  left;
+			padding: 16px 0 38px;
+			width:  20%;
+			text-decoration: none;
+			font-weight:  400;
+			color: #000;
+			transition: 0.6s;
+		}
+
+		.nav a:hover {
+			color: #8ac007;
+		}
+
+		.nav .effect {
+			position: absolute;
+			left:  -12.5%;
+			transition: 0.6s;
+			bottom:  15px;
+			width:  12px;
+			height:  12px;
+			margin-left: -6px;
+			background: #8ac007;
+			border-radius:  50%;
+		}
+
+		.nav a:nth-child(1):hover ~ .effect {
+			left:  10%;
+		}
+
+		.nav a:nth-child(2):hover ~ .effect {
+			left:  30%;
+		}
+
+		.nav a:nth-child(3):hover ~ .effect {
+			left:  50%;
+		}
+
+		.nav a:nth-child(4):hover ~ .effect {
+			left:  70%;
+		}
+
+		.nav a:nth-child(5):hover ~ .effect {
+			left:  90%;
+		}
+
+		.nav:after {
+			content: "";
+			display:  block;
+			clear: both;
+			position: absolute;
+			bottom:  20px;
+			width:  100%;
+			height:  1px;
+			background: #8ac007;
+		}
+
+		.nav a:after {
+			content: "";
+			display:  block;
+			clear: both;
+			position: absolute;
+			left:  50%;
+			bottom:  18px;
+			width:  4px;
+			height:  4px;
+			margin-left:  -2px;
+			background: #8ac007;
+			border-radius: 50%;
+		} 
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<a href="#">HTML</a>
+		<a href="#">CSS</a>
+		<a href="#">Javascript</a>
+		<a href="#">jQuery</a>
+		<a href="#">Portfolio</a>
+		<div class="effect"></div>
+	</div>
+</body>
+</html>
+<!-- 
+    
+-->
+<!-- 가상요소 메뉴 만들기 -->
+
+<!-- 
+ 리액트, 뷰,  - 모듈화
+ 제이슨, 에이젝슨 json
+ 그누보드 dom을 얻어야함.
+ 백엔드.
+
+ 인프런 -> 강의사이트 캡틴판교(뷰) -> 그 이후 리액트 공부
+
+ 코딩알려주는누나 - 유튜브
+
+
+ CSS 중요 - position, display, flex, float, block과 inline 태그 종류
+
+ javascript 중요 - dom, bom, api, 변수 사용, 객체, 함수
+
+ 깃, 깃허브 이용해서 -> 요즘은 파일질라 잘 이용안함(포토폴리오같은 것.). 깃에 대해서 알아둘것.
+ 넷리파이netlify
+ -->
